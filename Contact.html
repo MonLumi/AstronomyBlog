@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <title>Contact</title>
+</head>
+
+<body>
+    <header class="topbar">
+        <h1>Khám phá thiên văn</h1>
+        <nav class="navbar">
+            <div class="row">
+                <a href="index.html">Home</a>
+                <a href="AboutMe.html" target="_self">About me</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Blog Posts</button>
+                    <div class="dropdown-content">
+                        <a href="tinhvan_luabang.html">Vũ điệu Lửa và Băng</a>
+                        <a href="nhiep_anh_thien_van.html">Nhiếp ảnh thiên văn và các vấn đề với người mới</a>
+                        <a href="andromeda_galaxy.html">Pháo hoa trong ốc đảo vũ trụ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <a href="#contact">Contact</a>
+                <a href="Order.html">Order</a>
+                <a href="Contact.html">Contact Me</a>
+            </div>
+        </nav>
+        <nav id="moblie-menu" class="dropdown">
+            <button class="dropbtn"><i>&equiv;</i> Menu </button>
+            <div class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="AboutMe.html" target="_self">About me</a>
+                <a href="tinhvan_luabang.html">Vũ điệu Lửa và Băng</a>
+                <a href="nhiep_anh_thien_van.html">Nhiếp ảnh thiên văn và các vấn đề với người mới</a>
+                <a href="andromeda_galaxy.html">Pháo hoa trong ốc đảo vũ trụ</a>
+                <a href="#contact">Contact</a>
+                <a href="Order.html">Order</a>
+                <a href="Contact.html">Contact Me</a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="singlePage">
+        <h2>Contact Anh</h2>
+        <form id="contactForm" action="">
+            <label for="name">Your name</label> <input type="text" name="name" id="name" placeholder="Full Name or First Name">
+            <p id="nameError" class="error"></p>
+            <label for="email">Your email</label> <input type="text" name="email" id="email" placeholder="name@company.com">
+            <p id="emailError" class="error"></p>
+            <label for="subject">Subject</label> <input type="text" name="subject" id="subject">
+            <p id="subjectError" class="error"></p>
+            <label for="message">Message</label> <textarea name="message" cols="30" rows="10" id="message"></textarea>
+            <p id="messageError" class="error"></p>
+
+            <input id="submit" type="button" value="Send Message" onclick="checkAll()">
+        </form>
+
+    </main>
+
+    <footer id="contact ">
+        Nguyễn Vũ Việt Anh &copy; by Viet Anh
+    </footer>
+
+    <script src="js/contact.js"></script>
+</body>
+
+</html>
