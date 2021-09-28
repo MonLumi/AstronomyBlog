@@ -1,0 +1,202 @@
+html {
+    font-family: 'Dancing Script';
+    color: wheat;
+    background-color: #515151b0;
+}
+
+p {
+    font-size: 1.75rem;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 35px;
+    text-align: center;
+    font-weight: 900;
+    margin-top: 0px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 25px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 15px;
+}
+
+.topbar>h1 {
+    text-align: center;
+    font-size: 4em;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-shadow: 2px 2px darkblue;
+    padding-top: 50px;
+    padding-bottom: 75px;
+    background-image: url(../image/00_generic_facebook-001.jpg);
+    background-size: cover;
+    background-position: 0px -185px;
+    margin: 0px;
+}
+
+.navbar {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: -56px;
+    margin-bottom: 30px;
+}
+
+.row {
+    display: inline;
+}
+
+.navbar a {
+    color: inherit;
+    text-align: center;
+    padding: 10px 50px;
+    text-decoration: none;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+#moblie-menu {
+    display: none;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown .dropbtn {
+    border: none;
+    color: inherit;
+    padding: 10px 50px;
+    background-color: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: #fdfdfd3d;
+    color: white;
+    text-shadow: 2px 2px darkblue;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #515151af;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: inherit;
+    padding: 15px 20px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: smaller;
+    font-family: inherit;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+main {
+    background-color: floralwhite;
+    filter: drop-shadow(2px 4px 6px black);
+    border-radius: 10px;
+    text-align: justify;
+    color: black;
+}
+
+footer {
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+    text-transform: capitalize;
+    text-shadow: 2px 2px darkblue;
+    padding: 20px;
+    background-image: url(../image/00_generic_facebook-001.jpg);
+    background-position: center;
+    background-size: cover;
+    clear: both;
+}
+
+#singlePage {
+    padding: 20px 5%;
+    margin: 2.5%;
+}
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: -40px;
+    color: whitesmoke;
+    position: relative;
+}
+
+img {
+    width: 100%;
+}
+
+.radio {
+    font-size: smaller;
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.post h2 {
+    margin-top: 10px;
+}
+
+.post {
+    background-color: floralwhite;
+    width: 49.5%;
+    margin: 0.5% 0px;
+    filter: drop-shadow(2px 4px 6px black);
+    border-radius: 10px;
+    text-align: justify;
+    color: black;
+}
+
+.post p {
+    padding: 5px 40px;
+    font-size: 25px;
+    margin: 40px 5px;
+}
+
+.post a {
+    text-decoration: none;
+    color: black;
+}
+
+.post img {
+    filter: drop-shadow(0px 5px 15px black);
+    align-items: center;
+    border-radius: 10px;
+}
+
+.post img:hover {
+    transform: scale(1.05, 1.03);
+}

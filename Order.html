@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Đặt hàng</title>
+</head>
+
+<body>
+    <header class="topbar">
+        <h1>Khám phá thiên văn</h1>
+        <nav class="navbar">
+            <div class="row">
+                <a href="index.html">Home</a>
+                <a href="AboutMe.html" target="_self">About me</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Blog Posts</button>
+                    <div class="dropdown-content">
+                        <a href="tinhvan_luabang.html">Vũ điệu Lửa và Băng</a>
+                        <a href="nhiep_anh_thien_van.html">Nhiếp ảnh thiên văn và các vấn đề với người mới</a>
+                        <a href="andromeda_galaxy.html">Pháo hoa trong ốc đảo vũ trụ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <a href="#contact">Contact</a>
+                <a href="Order.html">Order</a>
+                <a href="Contact.html">Contact Me</a>
+            </div>
+        </nav>
+        <nav id="moblie-menu" class="dropdown">
+            <button class="dropbtn"><i>&equiv;</i> Menu </button>
+            <div class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="AboutMe.html" target="_self">About me</a>
+                <a href="tinhvan_luabang.html">Vũ điệu Lửa và Băng</a>
+                <a href="nhiep_anh_thien_van.html">Nhiếp ảnh thiên văn và các vấn đề với người mới</a>
+                <a href="andromeda_galaxy.html">Pháo hoa trong ốc đảo vũ trụ</a>
+                <a href="#contact">Contact</a>
+                <a href="Order.html">Order</a>
+                <a href="Contact.html">Contact Me</a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="singlePage">
+        <h2>Order</h2>
+        <form action="">
+            <label for="product">Product             
+                <select name="product" id="product">
+                    <option value="0">Select product</option>
+                    <optgroup label="Telescope">
+                        <option value="1">Refractor Telescope</option>
+                    <option value="2">Reflector Telescope</option>
+                    </optgroup>
+                    <optgroup label="Mount">
+                        <option value="3">EQ Mount</option>
+                        <option value="4">AZ Mount</option>
+                    </optgroup>
+                    <optgroup label="Camera">
+                        <option value="5">CCD Camera</option>
+                        <option value="6">CMOS Camera</option>
+                    </optgroup>
+                </select>
+            </label>
+            <p id="productError" class="error"></p>
+
+            <label for="name">Your name</label> <input type="text" name="name" id="name" placeholder="Full Name or First Name">
+            <p id="nameError" class="error"></p>
+
+            <label for="message">Message</label> <input type="text" name="message" id="message">
+            <p id="messageError" class="error"></p>
+
+            <label for="includes">Includes
+                    <div style="width: 70%; margin: auto;">
+                        <label class="container" style="float: left;">Candle<input type="checkbox" name="includes" value="Candle"></label>
+            <label class="container" style="float: right;">Fireworks<input type="checkbox" name="includes" value="Fireworks"></label>
+            <label class="container" style="float: left; clear: left;">Lazer<input type="checkbox" name="includes" value="Lazer"></label>
+            <label class="container" style="float: right; clear: right">Paint<input type="checkbox" name="includes" value="Paint"></label>
+            </div>
+            </label>
+
+            <label for="deliverDate" style="clear: both; ">Deliver Date</label> <input type="date" name="deliverDate" id="deliverDate" style="font-size: x-large;" placeholder="DD/MM/YYYY">
+            <p id="dateError" class="error"></p>
+
+
+            <label for="deliverAddress">Deliver Address</label> <textarea name="deliverAddress" cols="30 " rows="10 " id="address"></textarea>
+            <p id="addressError" class="error"></p>
+
+            <label for="includes">Call before delivers?
+            <label class="radio"><input type="radio" name="isCall" value="true"> Yes</label>
+            <label class="radio"><input type="radio" name="isCall" value="false" checked='checked'> No</label>
+            </label>
+            <br>
+            <br>
+            <input type="button" id="submit" value="Order now" onclick="check()">
+        </form>
+
+    </main>
+
+    <footer id="contact ">
+        Nguyễn Vũ Việt Anh &copy; by Viet Anh
+    </footer>
+
+    <script src="js/order.js"></script>
+</body>
+
+</html>

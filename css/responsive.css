@@ -1,0 +1,96 @@
+@media screen and (max-width: 1202px) {
+    .topbar h1 {
+        padding-bottom: 100px;
+    }
+    .navbar {
+        margin-top: -90px;
+        margin-bottom: 5%;
+    }
+    .row {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    p {
+        font-size: 1.5em;
+    }
+    figcaption {
+        margin-top: 10px;
+        color: black;
+        font-size: 1rem;
+    }
+    .topbar h1 {
+        font-size: 3em;
+        background-size: auto;
+        padding-bottom: 60px;
+    }
+    .post {
+        display: block;
+        float: none !important;
+        clear: both;
+        width: auto;
+        position: relative;
+        top: 20px;
+    }
+    .post h2 {
+        margin-top: 10px;
+        padding-top: 20px;
+    }
+    .navbar {
+        display: none;
+    }
+    #moblie-menu {
+        display: block;
+        font-weight: bold;
+        font-size: 1.5em;
+        margin-top: -56px;
+        margin-bottom: 30px;
+        margin-left: 10px;
+    }
+    .dropdown .dropbtn {
+        color: inherit;
+        padding: 5px;
+        margin: 10px;
+        background-color: inherit;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    .dropdown-content a {
+        padding: 15px 20px;
+        font-size: .75em;
+    }
+    label {
+        font-size: 1.5rem;
+    }
+    .container {
+        display: block;
+        clear: both !important;
+        float: right !important;
+        text-align: right;
+    }
+    .radio {
+        display: block;
+        float: right;
+        clear: right;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .topbar h1 {
+        font-size: 1.75em;
+    }
+    .post p {
+        margin-top: 5px;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+    label {
+        font-size: 1em;
+    }
+    p {
+        font-size: 1em;
+    }
+}
